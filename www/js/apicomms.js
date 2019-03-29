@@ -180,7 +180,7 @@ function apiCallPost(functionName, obj, callback, cancelled, responseType) {
     if (responseType) {
         request.responseType = responseType;
     } else {
-        request.responseType = "application/json";
+        request.responseType = "json";
     }
 
     request.send(JSON.stringify(obj));
